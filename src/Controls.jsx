@@ -66,7 +66,7 @@ class Controls extends Component {
             style={(btnClass || minusBtnClass) ? undefined : btnStyle}
             disabled={disableZoom || scale <= minScale}
           >
-            {minusBtnContents}
+          {minusBtnContents} and test to see what happens
           </button>
         </div>
       </div>
