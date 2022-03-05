@@ -37,6 +37,7 @@
     "@storybook/addon-links": "^5.1.11",
     "@storybook/addons": "^5.1.11",
     "@storybook/react": "^5.1.11",
+    "@mui/material": "^5.4.1",
     "babel-loader": "^8.0.5",
     "chai": "^4.2.0",
     "enzyme": "^3.11.0",

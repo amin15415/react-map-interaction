@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Button, Grid, IconButton, Tooltip } from '@mui/material';
+
 
 class Controls extends Component {
   render() {
@@ -54,7 +56,7 @@ class Controls extends Component {
           </button>
         </div>
         <div>
-          <button
+          {/* <button
             ref={(node) => { this.minusNode = node; }}
             onClick={minusHandler}
             onTouchEnd={minusHandler}
@@ -67,7 +69,8 @@ class Controls extends Component {
             disabled={disableZoom || scale <= minScale}
           >
           {minusBtnContents} and test to see what happens
-          </button>
+          </button> */}
+          <Button variant="contained" onClick={minusHandler} onTouchEnd={minusHandler} disabled={disableZoom || scale <= minScale}>Primary</Button>
         </div>
       </div>
     );
