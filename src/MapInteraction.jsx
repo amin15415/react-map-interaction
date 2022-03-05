@@ -45,7 +45,8 @@ export class MapInteractionControlled extends Component {
       btnClass: PropTypes.string,
       plusBtnClass: PropTypes.string,
       minusBtnClass: PropTypes.string,
-      controlsClass: PropTypes.string
+      controlsClass: PropTypes.string,
+      theButton: PropTypes.object
     };
   }
 
@@ -377,6 +378,7 @@ export class MapInteractionControlled extends Component {
         minScale={this.props.minScale}
         maxScale={this.props.maxScale}
         disableZoom={this.props.disableZoom}
+        theButton={this.props.theButton}
       />
     );
   }
@@ -455,7 +457,8 @@ class MapInteractionController extends Component {
       btnClass: PropTypes.string,
       plusBtnClass: PropTypes.string,
       minusBtnClass: PropTypes.string,
-      controlsClass: PropTypes.string
+      controlsClass: PropTypes.string,
+      theButton: PropTypes.object
     };
   }
 

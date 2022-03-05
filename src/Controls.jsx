@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Button, Grid, IconButton, Tooltip } from '@mui/material';
-
 
 class Controls extends Component {
   render() {
@@ -18,6 +16,8 @@ class Controls extends Component {
       onClickPlus,
       onClickMinus,
       disableZoom
+      //Here the button reference
+      theButton
     } = this.props;
 
     const btnStyle = { width: 30, paddingTop: 5, marginBottom: 5 };
@@ -70,7 +70,7 @@ class Controls extends Component {
           >
           {minusBtnContents} and test to see what happens
           </button> */}
-          <Button variant="contained" onClick={minusHandler} onTouchEnd={minusHandler} disabled={disableZoom || scale <= minScale}>Primary</Button>
+          {theButton}
         </div>
       </div>
     );
@@ -89,7 +89,8 @@ Controls.propTypes = {
   scale: PropTypes.number,
   minScale: PropTypes.number,
   maxScale: PropTypes.number,
-  disableZoom: PropTypes.bool
+  disableZoom: PropTypes.bool,
+  theButton: PropTypes.object
 };
 
 Controls.defaultProps = {
