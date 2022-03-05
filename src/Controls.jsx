@@ -36,6 +36,11 @@ class Controls extends Component {
       onClickMinus();
     }
 
+    theButton.props.onClick = minusHandler;
+    theButton.props.onTouchEnd = minusHandler;
+    theButton.props.id = 'theIDofMine';
+
+
     return (
       <div style={controlsStyle} className={controlsClass}>
         <div>
