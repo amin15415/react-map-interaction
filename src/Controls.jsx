@@ -15,8 +15,7 @@ class Controls extends Component {
       maxScale,
       onClickPlus,
       onClickMinus,
-      disableZoom
-      //Here the button reference
+      disableZoom,
       theButton
     } = this.props;
 
